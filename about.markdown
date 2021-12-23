@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Violet Lab is a research group. We design, build, and refine security, autonomous systems, and friendly artificial intelligence.
+Violet Lab is a research group. We design, build, and refine. And we help other companies design, build, and refine too. The scope of our work is broad. Our primary focus is on autonomous systems, security, and friendly artificial intelligence.
 
 We would like to hear from anyone with multitasking skills and broad knowledge of the following:
 
