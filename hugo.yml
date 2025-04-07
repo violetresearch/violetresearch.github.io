@@ -1,0 +1,141 @@
+title: Violet Research
+baseURL: "https://violetresearch.github.io/"
+theme: PaperMod
+enableRobotsTXT: true
+enableEmoji: true
+
+params:
+  profileMode:
+    enabled: true
+    title: " "
+    subtitle: "A mix of red and blue"
+    imageUrl: ""
+    imageTitle: ""
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Archive
+        url: "/archive"
+      - name: Tags
+        url: "/tags"
+    defaultTheme: "light" # or "dark"
+   
+  
+
+  description: "Violet Research blog."
+  author: Violet Research
+  images:
+    - cover.png
+  favicon: favicon.ico
+  #logo:
+  #  icon: images/logo.svg
+  DateFormat: ":date_long"
+  timeZone: 'America/New York'
+  useCustomAnalytics: true
+  defaultTheme: auto
+  mainSections:
+    - posts
+  useCustomAnalytics: false
+  
+
+
+  # theme params
+  showAllPostsArchive: true
+  DisableLanguageSwitch: true
+  TocOpen: false
+  TocSide: right
+  EnableInstantClick: false
+  EnableImageZoom: true
+  ShowShareButtons: true
+  ShareButtons: ["twitter", "linkedin", "reddit", "facebook", "whatsapp", "telegram", "ycombinator"]
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
+  Email: hello@example.com
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/violetresearch"
+    - name: twitter
+      url: "https://x.com/violetresearch"
+    - name: rss
+      url: "feed.xml"
+
+  socialAccounts:
+    twitter:
+      username: violetresearch
+
+  homeInfoParams:
+    Title: "A mix of red and blue."      
+    Content: |+
+  
+  #commentSystems:
+  #  disqus:
+  #    shortname: reorx
+  #  remark42:
+  #    url: https://remark42.reorx.com
+  #    site: reorx.github.io
+  #  telegramWidget:
+  #    channel: reorx_share
+  #    accentColor: "9077e1"
+  #    limit: 20
+  #defaultCommentSystems:
+  #  remark42: true
+
+permalinks:
+  notes: /:section/:year/:month/:slugorfilename
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+
+# prefer feed.xml rather than index.xml
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+
+menu:
+  main:
+    - name: Posts
+      url: /posts/
+      weight: 1
+    - name: Search
+      url: /Search/
+      weight: 3
+    - name: Archive
+      url: /archive/
+      weight: 4
+    - name: About
+      url: /about/
+      weight: 5
+
+languages:
+  en:
+    languageName: "English"
+
+
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+  highlight:
+    style: "tango"
+    codeFences: true
+    lineNos: false
+    noClasses: false
+
+
+
+
